@@ -1,0 +1,23 @@
+{
+  "author": "Michael Keller <michael.keller@gmail.com>",
+  "contributors": [
+    "Michael Keller",
+    "Thomas Levine"
+  ],
+  "name": "treasuryio",
+  "homepage": "http://treasury.io",
+  "description": "JavaScript client for treasury.io",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/csvsoundsystem/treasuryiojs.git"
+  },
+  "main": "treasuryio.js",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "jquery": "1.8.3",
+    "dsv": "0.0.2"
+  }
+}
