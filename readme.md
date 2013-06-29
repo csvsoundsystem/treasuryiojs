@@ -9,7 +9,9 @@ This is a [treasury.io](http://treasury.io) client for JavaScript.
 ## Run
 
     var treasuryio = require('treasuryio')
-    var result = treasuryio('SELECT * FROM t1 LIMIT 10;')
+    treasuryio('SELECT * FROM t1 LIMIT 10;', function(response){
+        console.log(response);
+    });
 
 ## Test
 To test that it works in the browser, open [this page](test/index.html).
