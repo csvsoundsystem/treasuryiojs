@@ -1,4 +1,4 @@
-module.exports = (function(){
+(function(){
   var $   = require('jquery'),
       dsv = require('dsv'),
       pi_endpoint = 'https://premium.scraperwiki.com/cc7znvq/47d80ae900e04f2/sql/?q=';
@@ -17,5 +17,9 @@ module.exports = (function(){
     });
   };
 
-  return convertJSONtoCSV;
+  if (typeof(module) == 'undefined') {
+    window.treasuryio = convertJSONtoCSV;
+  } else {
+    module.exports = convertJSONtoCSV;
+  }
 })()
