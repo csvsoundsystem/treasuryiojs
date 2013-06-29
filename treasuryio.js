@@ -1,13 +1,14 @@
-(function(){
+if (typeof(require) != 'undefined') {
   var $   = require('jquery'),
-      dsv = require('dsv'),
-      pi_endpoint = 'https://premium.scraperwiki.com/cc7znvq/47d80ae900e04f2/sql/?q=';
+      dsv = require('dsv')
+}
 
-  function convertJSONtoCSV(query){
+(function(){
+  var api_endpoint = 'https://premium.scraperwiki.com/cc7znvq/47d80ae900e04f2/sql/?q=';
+
+  function convertJSONtoCSV(query, callback){
     fetchJSON(query).done(function(json){
-      $download_csv_btn.html('Download .csv')
-      var csv = dsv.csv.format(json);
-      console.log(csv)
+      callback(dsv.csv.format(json));
     });
   };
    
