@@ -6,9 +6,13 @@ if (typeof(require) != 'undefined') {
 (function(){
   var api_endpoint = 'https://premium.scraperwiki.com/cc7znvq/47d80ae900e04f2/sql/?q=';
 
-  function convertJSONtoCSV(query, callback){
+  function convertJSONtoCSV(query, format, callback){
     fetchJSON(query).done(function(json){
-      callback(dsv.csv.format(json));
+      if(format == 'json'){
+        callback(json);
+      }else if (format == 'csv'){
+        callback(dsv.csv.format(json));
+      }
     });
   };
    

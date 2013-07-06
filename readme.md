@@ -1,15 +1,22 @@
 treasuryiojs
 =====
-This is a [treasury.io](http://treasury.io) client for JavaScript.
+This is a [treasury.io](http://treasury.io) client for JavaScript. It can return a `csv` or a `json` response depending on whether you pass either string as the second argument..
 
 ## Install
 
     npm install treasuryio
 
-## Run
+## Run with a `csv` response
 
     var treasuryio = require('treasuryio')
-    treasuryio('SELECT * FROM t1 LIMIT 10;', function(response){
+    treasuryio('SELECT * FROM t1 LIMIT 10', 'csv', function(response){
+        console.log(response);
+    });
+
+## Run with a `json` response
+
+    var treasuryio = require('treasuryio')
+    treasuryio('SELECT * FROM t1 LIMIT 10', 'json', function(response){
         console.log(response);
     });
 

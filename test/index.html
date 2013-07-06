@@ -2,7 +2,7 @@
 <script src="dsv.min.js"></script>
 <script src="../treasuryio.js"></script>
 <script>
-    treasuryio('SELECT * FROM sqlite_master', function(text) {
+    treasuryio('SELECT * FROM sqlite_master', 'csv', function(text) {
       document.body.innerText = text
     })
 </script>
