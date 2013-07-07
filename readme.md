@@ -30,4 +30,4 @@ To test that it works in node, run
     npm install treasuryio
     node test.js
 
-It should print the database schema.
+It should print the first ten rows from `t1`, "Operating Cash Balance.
