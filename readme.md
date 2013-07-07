@@ -22,7 +22,7 @@ This is a [treasury.io](http://treasury.io) client for JavaScript. It can return
 
 ## Test
 To test that it works in the browser, open [this page](test/index.html).
-You should see the database schema.
+You should see the first ten rows of of `t1`, Operating Cash Balance.
 
 To test that it works in node, run
 
