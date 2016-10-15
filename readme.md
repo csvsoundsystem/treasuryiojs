@@ -14,13 +14,13 @@ npm install --save treasuryio
 ### Run with a `json` response
 
 ```js
-  var treasuryio = require('treasuryio')
-  treasuryio('SELECT * FROM t1 LIMIT 10', 'json', function (err, response) {
-    if (err) {
-      console.log(err)
-    }
-    console.log(response)
-  })
+var treasuryio = require('treasuryio')
+treasuryio('SELECT * FROM t1 LIMIT 10', 'json', function (err, response) {
+  if (err) {
+    console.log(err)
+  }
+  console.log(response)
+})
 ```
 
 ### Run with a `csv` response
