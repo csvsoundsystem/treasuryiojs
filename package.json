@@ -1,13 +1,13 @@
 {
-  "author": "Michael Keller <michael.keller@gmail.com>",
+  "author": "Michael Keller <code@mhkeller.com>",
   "contributors": [
     "Michael Keller",
     "Thomas Levine"
   ],
   "name": "treasuryio",
   "homepage": "http://treasury.io",
-  "description": "JavaScript client for treasury.io",
-  "version": "0.0.5",
+  "description": "NodeJS client for treasury.io",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/csvsoundsystem/treasuryiojs.git"
