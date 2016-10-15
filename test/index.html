@@ -1,13 +1,12 @@
-<script src="jquery-2.0.2.min.js"></script>
 <script src="dsv.min.js"></script>
 <script src="../treasuryio.js"></script>
 <pre id="csv"></pre>
 <pre id="json"></pre>
 <script>
-    treasuryio('SELECT * FROM t1 LIMIT 10', 'csv', function(text) {
-      document.getElementById('csv').innerText = text
-    })
-    treasuryio('SELECT * FROM t1 LIMIT 10', 'json', function(text) {
-      document.getElementById('json').innerText = JSON.stringify(text)
-    })
+  treasuryio('SELECT * FROM t1 LIMIT 10', 'csv', function (err, text) {
+    document.getElementById('csv').innerText = text
+  })
+  treasuryio('SELECT * FROM t1 LIMIT 10', 'json', function (err, text) {
+    document.getElementById('json').innerText = JSON.stringify(text)
+  })
 </script>

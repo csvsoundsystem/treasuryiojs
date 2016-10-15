@@ -7,17 +7,28 @@
   "name": "treasuryio",
   "homepage": "http://treasury.io",
   "description": "JavaScript client for treasury.io",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "git://github.com/csvsoundsystem/treasuryiojs.git"
   },
   "main": "treasuryio.js",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.10.47"
   },
   "dependencies": {
-    "jquery": "1.8.3",
-    "dsv": "~0.0.2"
-  }
+    "dsv": "~0.0.2",
+    "request": "^2.75.0"
+  },
+  "bugs": {
+    "url": "https://github.com/csvsoundsystem/treasuryiojs/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "license": "MIT"
 }
